@@ -7,8 +7,8 @@
     <title>Meu Primeiro Programa em JavaScript</title>
     <style>
         body{
-            background-color: rgba(137, 43, 226, 0.482);
-            color: white;
+            background-color: rgba(137, 43, 226, 0.607);
+            color: yellow;
         }
     </style>
 </head>
@@ -17,9 +17,8 @@
     <p>ja me livrei da maldição!</p>
 
     <script>
-        window.alert('Minha primeira mensagem') //Lança uma Janela com um alerta.
-        window.confirm('Está gostando do JavaScript?')//Lança uma janela com alguma pergunta com um 'ok' ou 'cancelar'.
-        window.prompt('Qual o seu nome? ')//Lança uma Janela com um espeço para escrever alguma coisa, nesse caso perguntar o nome.
+        var nome = window.prompt('Qual o seu nome?')//Lança uma Janela com um espeço para escrever alguma coisa, nesse caso perguntar o nome.
+        window.alert('É um prazer te conhecher, '+ nome +'!') // Ussando o + você contatena a variável mais ou texto, ou seja, você junta tudo nume só mensagem
     </script>
 </body>
 </html>

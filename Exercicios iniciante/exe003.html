@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o Alert e o Prompet</title>
+    <style>
+        button{
+            font-size: 20px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>trabalhando com dados</h1>
+    <button onclick="Clica()">
+        clique aqui para começar
+    </button>
+
+    <script>
+        function Clica(){
+            var nome = window.prompt('Qual o seu nome?')
+            alert(`Olá, ${nome}! É um prazer te conhecer!`)
+        }
+    </script>
+</body>
+</html>
