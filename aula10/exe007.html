@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-  width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        input{
+            text-align: center;
+            height: 50px;
+            width: 60px;
+        }
+
+        input#s{
+            width: 60px;
+            color: rgb(35, 150, 150);
+        }
+
+        div#res{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Números</h1>
+    <input type="number" name="nu1" id="n1"> +
+    <input type="number" name="nu2" id="n2">
+    <input type="button" value="Somar" onclick="Soma()" id="s">
+    <div id="res">Resultado = </div> 
+
+    <script>
+        function Soma(){
+            var nu1 = window.document.getElementById('n1')
+            var nu2 = window.document.getElementById('n2')
+            var res = window.document.getElementById('res')
+            var v1 = Number(nu1.value)
+            var v2 = Number(nu2.value)
+            var soma = v1 + v2
+            res.innerHTML = `Resultado = ${soma}`
+        }
+    </script>
+</body>
+</html>
